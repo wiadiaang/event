@@ -1,43 +1,24 @@
-FROM php:8.1-fpm-alpine
+FROM php:8.1.11RC1-fpm-alpine
 
-USER root
+RUN set -ex \
+	&& apk add --update --no-cache \
+	postgresql-dev \
+	git zlib-dev freetype \
+	libpng libjpeg-turbo freetype-dev \
+	libpng-dev libjpeg-turbo-dev libwebp-dev \
+	libzip-dev zip \
+	&& docker-php-ext-configure gd \
+	--with-freetype \
+	--with-jpeg \
+	--with-webp        
 
-WORKDIR /var/www/html
+RUN docker-php-ext-install pdo_pgsql sockets gd zip
 
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# apk add bash
-RUN apk --no-cache add \
-	wget \
-	libssh2 libssh2-dev libssh2-static \
-	git \
-	nginx \
-	openssl curl-dev\
-	ca-certificates \
-	supervisor \
-	bash \
-	nano \
-	libxml2-dev \
-	postgresql-libs\
-	--virtual .build-deps gcc musl-dev postgresql-dev \
-	&& docker-php-ext-install \
-	curl \
-	pgsql \
-	pdo_pgsql
+WORKDIR /var/www/app
+COPY . .
 
+RUN mkdir -p /var/www/app/vendor
 
-COPY . /var/www/html
-COPY ./.env /var/www/html/.env
-
-RUN curl -sS https://getcomposer.org/installer | php -- \
-	--install-dir=/usr/local/bin --filename=composer
-
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-# WORKDIR /app
-# COPY . .
-RUN composer install
-
-EXPOSE 80 443
-
-# RUN chown www-data:www-data -R public/ storage/ bootstrap/ vendor/
-
-# RUN mkdir -p /var/www/html/vendor
+RUN chown www-data:www-data -R public/ storage/ bootstrap/ vendor/
