@@ -1,12 +1,12 @@
 version: "3.8"
 services:
     app:
-        image: yd1kot/php-fpm8.1-alpine:latest
+        # image: yd1kot/php-fpm8.1-alpine:latest
         container_name: event_app
         restart: unless-stopped
-        # build:
-        #     context: ./
-        #     dockerfile: ./docker/app.dockerfile
+        build:
+            context: ./
+            dockerfile: ./docker/app.dockerfile
         volumes:
             - ./:/var/www/html
             - vendor_volume:/var/www/html/vendor
