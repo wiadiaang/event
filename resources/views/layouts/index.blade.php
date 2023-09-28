@@ -79,7 +79,7 @@
                          <!--Logo start-->
                          <div class="logo-main no-printme">
                              <div class="logo-normal">
-                                 <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="https://www.w3.org/2000/svg">
                                      <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"/>
                                      <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)" fill="currentColor"/>
                                      <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"/>
@@ -87,7 +87,7 @@
                                  </svg>
                              </div>
                              <div class="logo-mini">
-                                 <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="https://www.w3.org/2000/svg">
                                      <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"/>
                                      <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)" fill="currentColor"/>
                                      <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"/>
@@ -115,7 +115,7 @@
                                      <a target="_blank" class="nav-link menu-arrow justify-content-start"  href="{{ url('/admin/presensi/add/#') }}"
                                         role="button" aria-expanded="false" aria-controls="homeData">
                                         <svg class="icon-20" width="20" viewBox="0 0 24 24" fill="currentColor"
-                                           xmlns="http://www.w3.org/2000/svg">
+                                           xmlns="https://www.w3.org/2000/svg">
                                            <path
                                               d="M9.14373 20.7821V17.7152C9.14372 16.9381 9.77567 16.3067 10.5584 16.3018H13.4326C14.2189 16.3018 14.8563 16.9346 14.8563 17.7152V20.7732C14.8562 21.4473 15.404 21.9951 16.0829 22H18.0438C18.9596 22.0023 19.8388 21.6428 20.4872 21.0007C21.1356 20.3586 21.5 19.4868 21.5 18.5775V9.86585C21.5 9.13139 21.1721 8.43471 20.6046 7.9635L13.943 2.67427C12.7785 1.74912 11.1154 1.77901 9.98539 2.74538L3.46701 7.9635C2.87274 8.42082 2.51755 9.11956 2.5 9.86585V18.5686C2.5 20.4637 4.04738 22 5.95617 22H7.87229C8.19917 22.0023 8.51349 21.8751 8.74547 21.6464C8.97746 21.4178 9.10793 21.1067 9.10792 20.7821H9.14373Z"
                                               fill="currentColor" />
@@ -697,7 +697,7 @@
                                   <div class="btn btn-primary btn-icon btn-sm rounded-pill">
                                      <span class="btn-inner">
                                         <svg class="icon-32" width="32" viewBox="0 0 24 24" fill="none"
-                                           xmlns="http://www.w3.org/2000/svg">
+                                           xmlns="https://www.w3.org/2000/svg">
                                            <path
                                               d="M11.997 15.1746C7.684 15.1746 4 15.8546 4 18.5746C4 21.2956 7.661 21.9996 11.997 21.9996C16.31 21.9996 19.994 21.3206 19.994 18.5996C19.994 15.8786 16.334 15.1746 11.997 15.1746Z"
                                               fill="currentColor"></path>
@@ -728,7 +728,7 @@
                                   <div class="btn btn-primary btn-icon btn-sm rounded-pill">
                                      <span class="btn-inner">
                                         <svg class="normal-screen icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                           xmlns="http://www.w3.org/2000/svg">
+                                           xmlns="https://www.w3.org/2000/svg">
                                            <path d="M18.5528 5.99656L13.8595 10.8961" stroke="white" stroke-width="1.5"
                                               stroke-linecap="round" stroke-linejoin="round"></path>
                                            <path d="M14.8016 5.97618L18.5524 5.99629L18.5176 9.96906" stroke="white" stroke-width="1.5"
@@ -739,7 +739,7 @@
                                               stroke-linecap="round" stroke-linejoin="round"></path>
                                         </svg>
                                         <svg class="full-normal-screen d-none icon-24" width="24" height="24" viewBox="0 0 24 24"
-                                           fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           fill="none" xmlns="https://www.w3.org/2000/svg">
                                            <path d="M13.7542 10.1932L18.1867 5.79319" stroke="white" stroke-width="1.5"
                                               stroke-linecap="round" stroke-linejoin="round"></path>
                                            <path d="M17.2976 10.212L13.7547 10.1934L13.7871 6.62518" stroke="currentColor"
