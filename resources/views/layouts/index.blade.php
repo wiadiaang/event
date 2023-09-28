@@ -4,11 +4,11 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title data-setting="app_name" data-rightJoin=" Pro | Responsive Bootstrap 5 Admin Dashboard Template">Hope UI Pro | Responsive Bootstrap 5 Admin Dashboard Template</title>
-        <meta name="description" content="Hope UI Pro is a revolutionary Bootstrap Admin Dashboard Template and UI Components Library. The Admin Dashboard Template and UI Component features 8 modules.">
-        <meta name="keywords" content="premium, admin, dashboard, template, bootstrap 5, clean ui, hope ui, admin dashboard,responsive dashboard, optimized dashboard,">
-        <meta name="author" content="Iqonic Design">
-        <meta name="DC.title" content="Hope UI Pro | Responsive Bootstrap 5 Admin Dashboard Template">
+        <title >{{ $title }}</title>
+        <meta name="description" content="Aplikasi Event MES">
+        <meta name="keywords" content="Aplikasi Event MES">
+        <meta name="author" content="Aang Wiadi">
+        <meta name="DC.title" content="Aplikasi Event MES">
 
         <!-- Google Font Api KEY-->
         <meta name="google_font_api" content="AIzaSyBG58yNdAjc20_8jAvLNSVi9E4Xhwjau_k">
@@ -23,8 +23,7 @@
         <link rel="stylesheet" href="{{ asset('assets/css/core/libs.min.css') }}" />
         
         
-        
-        
+
         
         
         
@@ -70,15 +69,15 @@
         <!-- loader END -->
       @include('layouts.sidebar')
 
-		<main class="main-content">
-            <div class="position-relative ">
+		<main class="main-content ">
+            <div class="position-relative no-printme">
             <!--Nav Start-->
                 <nav class="nav navbar navbar-expand-xl navbar-light iq-navbar header-hover-menu left-border">
                    <div class="container-fluid navbar-inner">
-                      <a href="index.html" class="navbar-brand">
+                      <a href="#" class="navbar-brand">
                          
                          <!--Logo start-->
-                         <div class="logo-main">
+                         <div class="logo-main no-printme">
                              <div class="logo-normal">
                                  <svg class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                      <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"/>
@@ -770,7 +769,7 @@
 
 
             <!-- Footer Section Start -->
-            <footer class="footer">
+            <footer class="footer no-printme">
                 <div class="footer-body">
                     {{-- <ul class="left-panel list-inline mb-0 p-0">
                         <li class="list-inline-item"><a href="extra/privacy-policy.html">Privacy Policy</a></li>

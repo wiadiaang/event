@@ -1,4 +1,4 @@
-<aside class="sidebar sidebar-base " id="first-tour" data-toggle="main-sidebar" data-sidebar="responsive">
+<aside class="sidebar sidebar-base no-printme" id="first-tour" data-toggle="main-sidebar" data-sidebar="responsive">
     <div class="sidebar-header d-flex align-items-center justify-content-start">
         <a href="{{ url('/dashboard')}}" class="navbar-brand">
             

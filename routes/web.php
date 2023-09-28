@@ -65,6 +65,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::post('/peserta/post', [App\Http\Controllers\PesertaController::class, 'post'])->name('post.peserta');
     Route::get('/peserta/get', [App\Http\Controllers\PesertaController::class, 'getPeserta'])->name('get.peserta');
     Route::get('/peserta/edit/{id}', [App\Http\Controllers\PesertaController::class, 'edit'])->name('edit.peserta');
+    Route::get('/peserta/view/{id}', [App\Http\Controllers\PesertaController::class, 'view'])->name('view.peserta');
     Route::patch('/peserta/update/{id}', [App\Http\Controllers\PesertaController::class, 'update'])->name('update.peserta');
     Route::get('/peserta/delete/{id}', [App\Http\Controllers\PesertaController::class, 'delete'])->name('delete.peserta');
     
