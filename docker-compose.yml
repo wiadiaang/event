@@ -2,7 +2,7 @@ version: "3.8"
 services:
     app:
         image: yd1kot/php-fpm8.1-alpine:latest
-        container_name: laravel-base-project
+        container_name: event_app
         restart: unless-stopped
         # build:
         #     context: ./
@@ -19,7 +19,7 @@ services:
         # depends_on:
         #     - db
     nginx:
-        container_name: nginx_lbp
+        container_name: nginx_event
         image: nginx:1.19-alpine
         restart: unless-stopped
         ports:
@@ -32,18 +32,18 @@ services:
         networks:
             - laravel
 
-    db:
-        image: postgres:14
-        container_name: postgres-db
-        restart: unless-stopped
-        environment:
-            POSTGRES_DB: laravel
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-        # volumes:
-        #   - db_data:/var/lib/postgresql/data
-        networks:
-            - laravel
+    # db:
+    #     image: postgres:14
+    #     container_name: postgres-db
+    #     restart: unless-stopped
+    #     environment:
+    #         POSTGRES_DB: laravel
+    #         POSTGRES_USER: postgres
+    #         POSTGRES_PASSWORD: postgres
+    #     # volumes:
+    #     #   - db_data:/var/lib/postgresql/data
+    #     networks:
+    #         - laravel
 
 # volumes:
 #   db_data:
