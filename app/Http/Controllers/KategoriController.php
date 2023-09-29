@@ -70,7 +70,7 @@ class KategoriController extends Controller
                 ->addColumn('action', function($row){
                     $actionBtn = ' <div class="d-flex justify-content-evenly">
                                    
-                                        <a class="btn btn-primary btn-icon btn-sm rounded-pill ms-2"  href="url("/admin/kategori/edit/")'. $row->id_kategori.'" role="button">
+                                        <a class="btn btn-primary btn-icon btn-sm rounded-pill ms-2"  href="/admin/kategori/edit/'. $row->id_kategori.'" role="button">
                                             <span class="btn-inner">
                                                 <svg class="icon-32" width="32" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
                                                     <path opacity="0.4" d="M19.9927 18.9534H14.2984C13.7429 18.9534 13.291 19.4124 13.291 19.9767C13.291 20.5422 13.7429 21.0001 14.2984 21.0001H19.9927C20.5483 21.0001 21.0001 20.5422 21.0001 19.9767C21.0001 19.4124 20.5483 18.9534 19.9927 18.9534Z" fill="currentColor"></path>

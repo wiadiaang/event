@@ -73,7 +73,7 @@ class EventController extends Controller
 
           }else{
 
-                 $filename = "glass-card.PNG";
+                 $filename = "glass-card.png";
           
               
                 $post = Event::create([
